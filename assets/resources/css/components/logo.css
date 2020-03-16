@@ -1,0 +1,12 @@
+.logo {
+  @apply font-light;
+  @apply lowercase;
+  @apply text-gray-100;
+  @apply text-xl;
+  @apply tracking-wider;
+}
+
+.logo-span {
+  @apply font-bold;
+  @apply uppercase;
+}

@@ -1,0 +1,45 @@
+.dropdown {
+  display: inline-flex;
+  position: relative;
+  z-index: 10;
+
+  &:hover {
+    .dropdown-trigger {
+      @apply bg-primary;
+    }
+
+    .dropdown-menu {
+      display: block;
+    }
+  }
+}
+
+.dropdown-trigger {
+  outline: 0;
+
+  &:focus {
+    outline: 0;
+  }
+}
+
+
+.dropdown-menu {
+  display: none;
+  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.16);
+  min-width: 200px;
+  z-index: 20;
+
+  position: absolute;
+  top: 100%;
+  left: 0;
+
+  @apply bg-primary;
+}
+
+.dropdown-link {
+  display: inline-block;
+  width: 100%;
+  &:hover {
+    @apply bg-primary-dark;
+  }
+}

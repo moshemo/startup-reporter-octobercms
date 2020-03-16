@@ -1,0 +1,23 @@
+.menu { 
+  display: flex; 
+  align-items: center;
+}
+
+.menu-link {
+  display: none;
+  text-decoration: none;
+  text-transform: uppercase;
+
+  @apply py-4 px-5;
+  @apply text-light;
+
+  &:focus,
+  &:hover {
+    @apply bg-primary;
+    @apply text-light;
+  }
+
+  @screen lg {
+    display: block;
+  }
+}

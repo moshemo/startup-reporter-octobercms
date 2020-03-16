@@ -1,0 +1,8 @@
+<div class="mobile-menu">
+  <a href="#" class="mobile-link">Home</a>
+  <a href="#" class="mobile-link">News</a>
+  <a href="#" class="mobile-link">About</a>
+  <a href="#" class="mobile-link">Advertise</a>
+  <a href="#" class="mobile-link">Newsletter</a>
+  <a href="#" class="mobile-link">Contact</a>
+</div>

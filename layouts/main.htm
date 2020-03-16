@@ -1,0 +1,31 @@
+description = 'Main'
+
+==
+{% partial 'head' %}
+
+<body>
+  {% partial 'if-ie' %}
+  {% partial 'header' %}
+
+
+  <div class="content">
+    <main class="main">{% page %}</main>
+
+    {% partial 'sidebar' %}
+
+    <footer class="footer">
+      <div class="footer-signup">FooterSignup</div>
+      <div class="footer-content">FooterContent</div>
+      <div class="footer-copyright">FooterCopyright</div>
+    </footer>
+
+
+  </div>
+
+  <script src="{{ 'assets/public/js/app.js' | theme }}"></script>
+
+  <!-- <script src="js/vendor/modernizr-3.8.0.min.js"></script> -->
+
+</body>
+
+</html>

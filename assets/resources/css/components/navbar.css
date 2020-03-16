@@ -1,0 +1,15 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+
+  @apply bg-primary-dark;
+  @apply font-sans;
+  @apply px-6;
+  @apply py-0;
+
+  @screen md {
+    @apply px-16;
+  }
+}

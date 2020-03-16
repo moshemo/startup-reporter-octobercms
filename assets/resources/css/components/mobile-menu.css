@@ -1,0 +1,45 @@
+.mobile-menu {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+
+  transition: transform 0.5s ease-in-out;
+  transform: translateX(-100%);
+  width: 100%;
+
+  @apply bg-dark;
+  @apply py-4 px-6;
+
+  @screen lg {
+    display: none;
+  }
+}
+
+.mobile-menu-open {
+  transform: translateX(0);
+}
+
+.mobile-link {
+  display: block;
+  margin: 0;
+  text-align: center;
+  text-transform: uppercase;
+  width: 200px;
+
+  @apply rounded-lg;
+  @apply py-3 px-0;
+  @apply text-base;
+  @apply text-offWhite;
+
+  &:hover {
+    @apply bg-alpha-black-200;
+    @apply text-offWhite;
+  }
+}

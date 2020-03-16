@@ -1,0 +1,49 @@
+.input {
+  @apply h-8;
+  @apply py-2 py-3;
+
+  &:focus,
+  &:hover {
+    outline: 0;
+  }
+
+  &::placeholder {
+    @apply text-grey;
+  }
+}
+
+.dark-form .input-error {
+  @apply bg-error-darkest !important;
+  @apply border-error-darkest !important;
+  @apply text-light !important;
+
+  &::placeholder {
+    @apply text-light !important;
+  }
+}
+
+.input-error-text {
+  font-weight: 400;
+  position: relative;
+  text-align: left;
+  @apply bg-dark;
+  @apply py-2 px-3;
+  @apply mt-0 mb-6;
+
+  &::after {
+    content: '';
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    border-bottom: 7px solid theme('colors.dark');
+    height: 0;
+    width: 0;
+
+    position: absolute;
+    bottom: 100%;
+    left: 10%;
+  }
+}
+
+.dark-form .input-error-text {
+  @apply text-light;
+}

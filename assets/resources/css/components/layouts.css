@@ -1,0 +1,22 @@
+.content {
+  display: flex;
+}
+
+.main {
+  width: 100%;
+  @apply mt-12 mx-auto mb-16;
+}
+
+/* --- Sidebar --- */
+.sidebar {
+  display: none;
+
+  @screen lg {
+    display: block;
+    min-height: 100vh;
+    min-width: 400px;
+    width: 400px;
+
+    @apply bg-light;
+  }
+}

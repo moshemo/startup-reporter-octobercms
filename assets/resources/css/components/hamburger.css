@@ -1,0 +1,41 @@
+.hamburger {
+  opacity: 0.8;
+  z-index: 100;
+
+  @apply py-4 px-5;
+
+  &:hover {
+    opacity: 1;
+  }
+
+  &:focus,
+  &:hover {
+    outline: none;
+  }
+
+  @screen lg {
+    display: none;
+  }
+}
+
+.hamburger-box {
+  height: auto !important;
+  width: auto !important;
+
+  @apply w-8;
+  @apply h-5;
+}
+
+.hamburger-inner {
+  margin-top: 2px;
+  top: 0 !important;
+}
+
+.hamburger-inner,
+.hamburger-inner::before,
+.hamburger-inner::after {
+  height: 3px;
+
+  @apply bg-light;
+  @apply w-8;
+}
